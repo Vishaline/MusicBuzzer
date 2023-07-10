@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="https://cloud.boltiot.com/static/js/boltCommands.js"></script>
+        <script>
+        setKey('{{ApiKey}}','{{Name}}');
+    </script>
+</head>
+<body>
+    <center>
+	<title></title>
+	<h2>
+            Buzzer Music Player
+    </h2>
+	<table>
+        <tr>
+            <th>Note</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>130</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>170</td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>210</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>250</td>
+        </tr>
+      
+    </table>
+    
+	<p>Click on the Note you'd like to play</p>
+	<button onclick="analogWrite(0,10)">C</button>
+	<button onclick="analogWrite(0,50)">D</button>
+	<button onclick="analogWrite(0,90)">E</button>
+	<button onclick="analogWrite(0,130)">F</button>
+	<button onclick="analogWrite(0,170)">G</button>
+	<button onclick="analogWrite(0,210)">A</button>
+	<button onclick="analogWrite(0,255)">B</button>
+	</center>
+	</body>
+</html>
